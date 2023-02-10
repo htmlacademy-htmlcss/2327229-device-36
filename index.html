@@ -17,7 +17,7 @@
           <section class="user-tools">
 
             <form action="https://echo.htmlacademy.ru/" class="search-form" method="post">
-              <label for="site-search"></label>
+              <label for="site-search" class="visually-hidden">Поиск по сайту</label>
               <input id="site-search" class="search-input" type="text" name="site-search" placeholder="Поиск по сайту">
               <button class="search-button" type="submit">Найти</button>
             </form>
@@ -64,30 +64,68 @@
         <section class="slider">
           <h2 class="visually-hidden">Презентация товаров</h2>
 
-
-          <img class="slider-image" src="#" alt="Квадракоптер">
+          <ol class="sliedr-list">
+            <li class="sliedr-item">
+              <img class="slider-image" src="#" alt="Квадракоптер">
+              <div class="slider-description">
+                <strong>Порхает как бабочка, жалит как пчела!</strong>
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                <a class="button-slider-item" href="#">Подробнее</a>
+                <div class="characteristic-product">
+                  <div class="characteristic-product-colomn">
+                    <span class="characteristic-product-value">800 м</span>
+                    <span class="characteristic-product-name">Дальность полета</span>
+                  </div>
+                  <div class="characteristic-product-colomn">
+                    <span class="characteristic-product-value">50 м</span>
+                    <span class="characteristic-product-name">Радиус поражения</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sliedr-item">
+              <img class="slider-image" src="#" alt="Фитнес-браслет">
+              <div class="slider-description">
+                <strong>Худеем правильно!</strong>
+                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <a class="button-slider-item" href="#">Подробнее</a>
+                <div class="characteristic-product">
+                  <div class="characteristic-product-colomn">
+                    <span class="characteristic-product-value">48 часов</span>
+                    <span class="characteristic-product-name">Без подзарядки</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="sliedr-item">
+              <img class="slider-image" src="#" alt="Селфи-палка">
+              <div class="slider-description">
+                <strong>Делай селфи, как Бен Стиллер!</strong>
+                <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+                <a class="button-slider-item" href="#">Подробнее</a>
+                <div class="characteristic-product">
+                  <div class="characteristic-product-colomn">
+                    <span class="characteristic-product-value">8,5 м</span>
+                    <span class="characteristic-product-name">Длина палки</span>
+                  </div>
+                  <div class="characteristic-product-colomn">
+                    <span class="characteristic-product-value">5 кг</span>
+                    <span class="characteristic-product-name">Вес палки</span>
+                  </div>
+                  <div class="characteristic-product-colomn">
+                    <span class="characteristic-product-value">Карбон</span>
+                    <span class="characteristic-product-name">Материал</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ol>
           <button class="slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
           </button>
           <button class="slider-button slider-next" type="button">
             <span class="visually-hidden">Следующий слайд</span>
           </button>
-          <div class="slider-description">
-            <strong>Порхает как бабочка,
-            жалит как пчела!</strong>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <button class="button-slider-item" type="button">Подробнее</button>
-            <div class="characteristic-product">
-              <div class="characteristic-product-colomn">
-                <span class="characteristic-product-name">800 м</span>
-                <span class="characteristic-product-value">50 м</span>
-              </div>
-              <div class="characteristic-product-colomn">
-                <span class="characteristic-product-name">Дальность полета</span>
-                <span class="characteristic-product-value">Радиус поражения</span>
-              </div>
-            </div>
-          </div>
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
