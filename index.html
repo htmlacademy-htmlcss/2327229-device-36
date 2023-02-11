@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>Магазин "Девайс"</title>
   </head>
+
   <body>
     <header class="page-header">
       <div class="content-container">
@@ -59,9 +61,9 @@
     </header>
 
     <main class="page-main">
-      <div class="content-container">
-        <h1 class="visually-hidden">Магазин "Девайс"</h1>
-        <section class="slider">
+      <h1 class="visually-hidden">Магазин "Девайс"</h1>
+      <section class="slider">
+        <div class="content-container">
           <h2 class="visually-hidden">Презентация товаров</h2>
 
           <ol class="slieder-list">
@@ -69,7 +71,8 @@
               <img class="slider-image" src="#" alt="Квадракоптер">
               <div class="slider-description">
                 <strong>Порхает как бабочка, жалит как пчела!</strong>
-                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
+                  камеру.</p>
                 <a class="button-slider-item" href="#">Подробнее</a>
                 <div class="characteristic-product">
                   <div class="characteristic-product-colomn">
@@ -101,7 +104,8 @@
               <img class="slider-image" src="#" alt="Селфи-палка">
               <div class="slider-description">
                 <strong>Делай селфи, как Бен Стиллер!</strong>
-                <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+                <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
+                  всего 5 кг.</p>
                 <a class="button-slider-item" href="#">Подробнее</a>
                 <div class="characteristic-product">
                   <div class="characteristic-product-colomn">
@@ -143,9 +147,12 @@
               </button>
             </li>
           </ol>
-        </section>
+        </div>
 
-        <section class="category-preview">
+      </section>
+
+      <section class="category-preview">
+        <div class="content-container">
           <h2 class="visually-hidden">Категории товаров</h2>
           <ul class="category-list">
             <li class="category-item">
@@ -185,9 +192,11 @@
               </a>
             </li>
           </ul>
+        </div>
+      </section>
 
-        </section>
-        <section class="additional-terms">
+      <section class="additional-terms">
+        <div class="content-container">
           <h2 class="visually-hidden">Дополнительные услуги</h2>
           <div class="services-items">
             <ul class="services-list">
@@ -205,20 +214,23 @@
           <div class="description">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо
-            к вашему подъезду совершенно бесплатно! Ведь
-            мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              к вашему подъезду совершенно бесплатно! Ведь
+              мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
+        </div>
+      </section>
 
-        </section>
-
-        <section class="delivery-on-order">
+      <section class="delivery-on-order">
+        <div class="content-container">
           <h2 class="visually-hidden">Доставка под заказ</h2>
           <button class="button-delivery-on-order">
             <span>Доставим редкий товар под заказ</span>
           </button>
-        </section>
+        </div>
+      </section>
 
-        <section class="information-company">
+      <section class="information-company">
+        <div class="content-container">
           <h2 class="visually-hidden">Информация о компании</h2>
           <section class="about-us">
             <h3>О нас</h3>
@@ -235,7 +247,7 @@
           <section class="contacts">
             <h3>Контакты</h3>
             <p>Вы можете забрать товар сами, заехав в наш офис.
-            Заодно сможете проверить работоспособность покупки.</p>
+              Заодно сможете проверить работоспособность покупки.</p>
             <h4 class="contacts-subtitle">Интернет-магазин «Девайс»</h4>
             <address class="contacts-address">
               <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -248,23 +260,25 @@
             </ul>
             <a href="#" class="button">Напишите нам</a>
           </section>
+        </div>
+      </section>
 
-        </section>
-
-        <section class="mailing-letters">
+      <section class="mailing-letters">
+        <div class="content-container">
           <h2>Подпишитесь на рассылку</h2>
           <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
-          спецпредложения и вот это вот всё.</p>
+            спецпредложения и вот это вот всё.</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+              required>
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
           <div class="addition">
             <p>Это бесплатно</p>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
@@ -327,4 +341,5 @@
 
     </footer>
   </body>
+
 </html>
