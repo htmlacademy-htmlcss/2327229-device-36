@@ -12,31 +12,34 @@
       <div class="content-container">
         <nav class="navigation">
 
-          <a href="#">
+          <a href="#" class="link-logo">
             <img class="image-logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип магазина «Девайс»">
           </a>
 
 
           <section class="user-tools">
-
-            <form action="https://echo.htmlacademy.ru/" class="search-form" method="post">
-              <label for="site-search" class="visually-hidden">Поиск по сайту</label>
-              <input id="site-search" class="search-input" type="text" name="site-search" placeholder="Поиск по сайту">
-              <button class="search-button" type="submit">Найти</button>
-            </form>
-            <ul class="user-navigation">
-              <li class="user-navigation-item">
-                <a class="button-login" href="#">Войти</a>
-              </li>
-            </ul>
-            <ul class="navigation-user">
-              <li class="navigation-user-item">
-                <a href="#" class="navigation-user-button">Сравнить</a>
-              </li>
-              <li class="navigation-user-item">
-                <a href="#" class="navigation-user-button">Корзина</a>
-              </li>
-            </ul>
+            <div class="header-container">
+              <div class="container-search">
+                <form action="https://echo.htmlacademy.ru/" class="search-form" method="post">
+                  <label for="site-search" class="visually-hidden" hidden>Поиск по сайту</label>
+                  <input id="site-search" class="search-input" type="text" name="site-search" placeholder="Поиск по сайту">
+                  <button class="search-button" type="submit">Найти</button>
+                </form>
+                <ul class="user-page-navigation">
+                  <li class="user-page-navigation-item">
+                    <a class="button-login" href="#">Войти</a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="navigation-user">
+                <li class="navigation-user-item">
+                  <a href="#" class="navigation-user-button">Сравнить</a>
+                </li>
+                <li class="navigation-user-item">
+                  <a href="#" class="navigation-user-button">Корзина</a>
+                </li>
+              </ul>
+            </div>
           </section>
 
           <section class="site-navigation">
@@ -59,11 +62,11 @@
 
     </header>
 
-    <main class="page-main">
-      <h1 class="visually-hidden">Магазин "Девайс"</h1>
+    <main class="page-main main-container">
+      <h1 class="visually-hidden" hidden>Магазин "Девайс"</h1>
       <section class="slider">
         <div class="content-container">
-          <h2 class="visually-hidden">Презентация товаров</h2>
+          <h2 class="visually-hidden" hidden>Презентация товаров</h2>
 
           <ol class="slieder-list">
             <li class="slieder-item">
@@ -163,7 +166,7 @@
             <li class="category-item">
               <a href="catalog.html">
                 <img src="images/category-monopod.svg" width="160" height="160" alt="Монопод для селфи">
-                <span>Моноподы для селфи</span>
+                <span>Моноподы<br> для селфи</span>
               </a>
             </li>
             <li class="category-item">
@@ -195,8 +198,8 @@
       </section>
 
       <section class="additional-terms">
-        <div class="content-container">
-          <h2 class="visually-hidden">Дополнительные услуги</h2>
+        <div class="content-container flex-container">
+          <h2 class="visually-hidden" hidden>Дополнительные услуги</h2>
           <div class="services-items">
             <ul class="services-list">
               <li class="services-item">
@@ -212,8 +215,8 @@
           </div>
           <div class="description">
             <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно! Ведь
+            <p>Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно! Ведь<br>
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
         </div>
@@ -221,7 +224,7 @@
 
       <section class="delivery-on-order">
         <div class="content-container">
-          <h2 class="visually-hidden">Доставка под заказ</h2>
+          <h2 class="visually-hidden" hidden>Доставка под заказ</h2>
           <button class="button button-delivery-on-order">
             <span>Доставим редкий товар под заказ</span>
           </button>
@@ -229,8 +232,8 @@
       </section>
 
       <section class="information-company">
-        <div class="content-container">
-          <h2 class="visually-hidden">Информация о компании</h2>
+        <div class="content-container flex-container">
+          <h2 class="visually-hidden" hidden>Информация о компании</h2>
           <section class="about-us">
             <h3>О нас</h3>
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -264,26 +267,30 @@
 
       <section class="mailing-letters">
         <div class="content-container">
-          <h2>Подпишитесь на рассылку</h2>
-          <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
+          <div class="caption-container">
+            <h2>Подпишитесь на рассылку</h2>
+            <p>Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции,
             спецпредложения и вот это вот всё.</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
-            <button class="button newsletter-button" type="submit">Подписаться</button>
-          </form>
-          <div class="addition">
-            <p>Это бесплатно</p>
+          </div>
+          <div class="mailing-letters-container">
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="newsletter-email">Email</label>
+              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                required>
+              <button class="button newsletter-button" type="submit">Подписаться</button>
+            </form>
+            <div class="addition">
+              <p>Это бесплатно</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="content-container">
+      <div class="content-container flex-container">
         <div class="footer-address-section">
-          <h2 class="visually-hidden">Адрес</h2>
+          <h2 class="visually-hidden" hidden>Адрес</h2>
           <a href="#">
             <img class="footer-address-logo" src="images/logo-footer.svg" width="145" height="36" alt="Логотип интернет-магазина Девайс">
           </a>
@@ -293,7 +300,7 @@
         </div>
 
         <div class="footer-links">
-          <h2 class="visually-hidden">Навигация</h2>
+          <h2 class="visually-hidden" hidden>Навигация</h2>
           <nav class="footer-navigation">
             <ul class="footer-navigation-list">
               <li class="footer-navigation-item">
@@ -327,7 +334,7 @@
         </div>
 
         <div class="footer-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
+          <h2 class="visually-hidden" hidden>Контакты</h2>
           <address class="footer-contacts-phone">
             <span>Тел.:</span>
             <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
