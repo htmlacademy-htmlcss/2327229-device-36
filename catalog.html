@@ -26,7 +26,7 @@
                   <input class="search-input" type="text" name="site-search" placeholder="Поиск по сайту">
                   <button class="search-button" type="submit">Найти</button>
                 </form>
-                <ul class="user-navigation">
+                <ul class="user-page-navigation">
                   <li class="user-navigation-item">
                     <a class="button-login-user">Коля Петухов</a>
                   </li>
@@ -68,7 +68,7 @@
 
     <main class="main-inner main-container">
       <header class="inner-header">
-        <div class="content-container">
+        <div class="catalog-container">
           <h1 class="inner-header-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -85,8 +85,8 @@
       </header>
 
       <section class="catalog-products">
-        <div class="content-container flex-container">
-          <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
+        <div class="catalog-container flex-container">
+          <h2 class="visually-hidden">Список товаров с фильтрами</h2>
           <section class="catalog-filter">
             <h3 class="filter-title">Фильтр:</h3>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -143,12 +143,14 @@
                 <option value="cheap">Дешёвые</option>
                 <option value="expensive">Дорогие</option>
               </select>
-              <a href="#" class="button-navigation">
-                <span class="visually-hidden">Показать cнизу вверх</span>
-              </a>
-              <a class="button-navigation" href="#">
-                <span class="visually-hidden">Показать сверху вниз</span>
-              </a>
+              <div class="buttons-navigation-container">
+                <a href="#" class="button-navigation">
+                  <span class="visually-hidden">Показать cнизу вверх</span>
+                </a>
+                <a class="button-navigation" href="#">
+                  <span class="visually-hidden">Показать сверху вниз</span>
+                </a>
+              </div>
             </div>
             <div class="product-list-conteiner">
               <ul class="product-list">
@@ -211,9 +213,9 @@
 
 
     <footer class="page-footer">
-      <div class="content-container flex-container">
+      <div class="catalog-container flex-container">
         <div class="footer-address-section">
-          <h2 class="visually-hidden" hidden>Адрес</h2>
+          <h2 class="visually-hidden">Адрес</h2>
           <a href="#">
             <img class="footer-address-logo" src="images/logo-footer.svg" width="145" height="36"
               alt="Логотип интернет-магазина Девайс">
@@ -224,7 +226,7 @@
         </div>
 
         <div class="footer-links">
-          <h2 class="visually-hidden" hidden>Навигация</h2>
+          <h2 class="visually-hidden">Навигация</h2>
           <nav class="footer-navigation">
             <ul class="footer-navigation-list">
               <li class="footer-navigation-item">
@@ -258,7 +260,7 @@
         </div>
 
         <div class="footer-contacts">
-          <h2 class="visually-hidden" hidden>Контакты</h2>
+          <h2 class="visually-hidden">Контакты</h2>
           <address class="footer-contacts-phone">
             <span>Тел.:</span>
             <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
