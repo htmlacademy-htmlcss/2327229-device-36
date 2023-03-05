@@ -63,10 +63,20 @@ body{
   overflow: hidden;
 }
 
-.content-container{
-  width: 1160px;
-  margin: 0 auto 70px;
+.list-reset {
+  list-style-type: none;
+  margin: 0;
   padding: 0;
+}
+
+.container{
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20зя;
+}
+
+.margin-bottom-container{
+  margin-bottom: 70px;
 }
 
 .navigation{
@@ -107,10 +117,7 @@ body{
 }
 
 .user-page-navigation{
-  margin: 0;
-  padding: 0;
   max-width: 229px;
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
 }
@@ -120,10 +127,7 @@ body{
 }
 
 .navigation-user{
-  margin: 0;
-  padding: 0;
   width: 240px;
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
 }
@@ -158,17 +162,9 @@ body{
 
 .navigation-list{
   min-width: 472px;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.slieder-list{
-  margin: 0;
-  padding: 0;
 }
 
 .slieder-item{
@@ -276,9 +272,6 @@ body{
 .category-list{
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .category-item{
@@ -314,10 +307,7 @@ body{
 }
 
 .services-list{
-  padding: 0;
   padding-top: 64px;
-  margin: 0;
-  list-style-type: none;
 }
 
 .button-active{
@@ -376,8 +366,6 @@ body{
 }
 
 .transport-companies-list{
-  margin: 0;
-  padding: 0;
   margin-bottom: 40px;
 }
 
@@ -504,9 +492,7 @@ body{
 .footer-navigation-list{
   width: 445px;
   margin: 137px 0 62px;
-  padding: 0;
   display: flex;
-  list-style-type: none;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -522,10 +508,8 @@ body{
 
 .footer-social{
   width: 150px;
-  padding: 0;
   margin: 0 auto;
   display: flex;
-  list-style-type: none;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -597,9 +581,6 @@ body{
 .breadcrumbs{
   font-size: 16px;
   line-height: 20px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   padding-left: 60px;
   display: flex;
 }
@@ -664,9 +645,6 @@ body{
 }
 
 .product-list{
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
   margin-bottom: 50px;
 }
 
@@ -714,10 +692,8 @@ body{
 }
 
 .pagination{
-  list-style-type: none;
   display: flex;
   margin: 0 auto;
-  padding: 0;
 }
 
 .catalog-page-navigation{
