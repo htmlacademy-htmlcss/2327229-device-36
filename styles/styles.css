@@ -154,6 +154,7 @@ body{
   display: flex;
   justify-content: space-between;
   padding: 0 60px;
+  padding-bottom: 30px;
 }
 
 .button-drop-menu{
@@ -162,9 +163,14 @@ body{
 
 .navigation-list{
   min-width: 472px;
+  max-width: 640px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.navigation-item{
+  padding: 0 10px;
 }
 
 .slieder-item{
@@ -310,6 +316,10 @@ body{
   padding-top: 64px;
 }
 
+.services-item:not(:last-child){
+  margin-bottom: 35px;
+}
+
 .button-active{
   background-color: var(--main-color-fonts-and-button);
   color: #FFE17F;
@@ -419,6 +429,7 @@ body{
 
 .mailing-letters{
   background-color: #F0F0F0;
+  padding-bottom: 56px;
 }
 
 .mailing-letters .content-container{
@@ -428,21 +439,28 @@ body{
 .caption-container{
   display: flex;
   justify-content: space-between;
+  padding-top: 64px;
+  margin-bottom: 147px;
 }
 
 .caption-container h2{
+  display: block;
   width: 348px;
-  margin: 64px 0 160px;
+  margin: 0;
 }
 
 .caption-container p{
   width: 560px;
-  margin: 74px 0 160px;
+  margin: 0;
 }
 
 .mailing-letters-container{
   display: flex;
   justify-content: space-between;
+}
+
+.addition p{
+  margin: 0;
 }
 
 .mailing-letters h2{
@@ -577,6 +595,7 @@ body{
   line-height: 20px;
   padding-left: 60px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-item:not(:last-child){
@@ -640,6 +659,10 @@ body{
 
 .product-list{
   margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 360px 360px;
+  column-gap: 40px;
+  row-gap: 44px;
 }
 
 .product-list a{
@@ -647,11 +670,24 @@ body{
   color: var(--main-color-fonts-and-button);
 }
 
+.product-card-image{
+  display: block;
+  margin-bottom: 32px;
+}
+
+.product-card-content-container{
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-card-title{
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
+  display: block;
+  max-width: 226px;
+  margin: 0;
 }
 
 .product-card-price{
