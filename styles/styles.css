@@ -52,10 +52,31 @@ body{
   min-height: 100%;
 }
 
-.content-container{
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
   width: 1160px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20зя;
+}
+
+.margin-bottom-container{
+  margin-bottom: 70px;
 }
 
 .navigation{
@@ -65,6 +86,10 @@ body{
 
 .link-logo{
   padding-left: 60px;
+}
+
+.user-tools{
+  margin-bottom: 50px;
 }
 
 .header-container{
@@ -92,14 +117,24 @@ body{
 }
 
 .user-page-navigation{
-  margin: 0;
   max-width: 229px;
-  padding-left: 18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-navigation-item:not(:last-child){
+  margin-right: 28px;
 }
 
 .navigation-user{
-  margin: 0;
   width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation-user-item:not(:first-child){
+  margin-left: 18px;
+
 }
 
 .page-header a{
@@ -121,17 +156,15 @@ body{
   padding: 0 60px;
 }
 
-.utton-drop-menu{
+.button-drop-menu{
   width: 293px;
 }
 
 .navigation-list{
-  width: 472px;
-}
-
-.slieder-list{
-  margin: 0;
-  padding: 0;
+  min-width: 472px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .slieder-item{
@@ -170,6 +203,14 @@ body{
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  display: block;
+  margin-bottom: 29px;
+}
+
+.slider-description p{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
 }
 
 .button{
@@ -183,8 +224,28 @@ body{
   text-transform: uppercase;
 }
 
+.button-slider{
+  display: block;
+  margin-bottom: 60px;
+  width: 220px;
+}
+
+.characteristic-product{
+  display: flex;
+}
+
+.characteristic-product-colomn{
+  display: flex;
+  flex-direction: column;
+}
+
+.characteristic-product-colomn:not(:last-child){
+  margin-right: 20px;
+}
+
 .characteristic-product-value{
   font-size: 36px;
+  margin-bottom: 12px;
 }
 
 .characteristic-product-name{
@@ -192,11 +253,25 @@ body{
   color: #444444;
 }
 
+.slider-pagination{
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.slider-pagination-item{
+  width: 12px;
+}
+
+.slider-pagination-item:not(:last-child){
+  margin-right: 14px;
+}
+
 .category-list{
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
 }
 
 .category-item{
@@ -217,6 +292,10 @@ body{
   margin-bottom: 70px;
 }
 
+.additional-terms-container{
+  display: flex;
+}
+
 .flex-container{
   display: flex;
   justify-content: space-between;
@@ -224,10 +303,11 @@ body{
 
 .services-items{
   width: 287px;
+  margin-right: 116px;
 }
 
 .services-list{
-  padding: 0;
+  padding-top: 64px;
 }
 
 .button-active{
@@ -255,7 +335,6 @@ body{
   border: none;
   padding: 40px 0;
   width: 100%;
-  margin-bottom: 70px;
 }
 
 .information-company{
@@ -267,7 +346,7 @@ body{
 }
 
 .about-us h3{
-  margin: 47px 0 48px;
+  margin: 40px 0 48px;
 }
 
 .about-us p{
@@ -282,17 +361,31 @@ body{
   margin: 47px 0 48px;
 }
 
+.contacts p{
+  margin: 0 0 30px;
+}
+
+.transport-companies-list{
+  margin-bottom: 40px;
+}
+
 .transport-companies-item{
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
+  list-style-type: none;
+}
+
+.transport-companies-item:not(:last-child){
+  margin-bottom: 19px;
 }
 
 .contacts h4{
   font-weight: 700;
   font-size: 24px;
   color: #444444;
+  margin: 0 0 15px;
 }
 
 .contacts-schedule-item{
@@ -305,8 +398,31 @@ body{
   text-decoration-line: underline;
 }
 
+.contacts-address p{
+  margin: 0;
+}
+
+.contacts-address{
+  margin-bottom: 30px;
+}
+
+.contacts-subtitle{
+  margin-bottom: 15px;
+}
+
+.contacts-schedule{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
 .mailing-letters{
   background-color: #F0F0F0;
+}
+
+.mailing-letters .content-container{
+  margin-bottom: 0;
 }
 
 .caption-container{
@@ -341,12 +457,17 @@ body{
 .page-footer{
   background-color: var(--main-color-footer);
   color: #FFFFFF;
+  min-height: 320px;
 }
 
 .footer-address-section{
   margin: 0;
   padding: 62px 0 0;
   width: 240px;
+}
+
+.footer-address-logo{
+  margin-bottom: 35px;
 }
 
 .page-footer a{
@@ -371,7 +492,9 @@ body{
 .footer-navigation-list{
   width: 445px;
   margin: 137px 0 62px;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-navigation-item{
@@ -385,8 +508,15 @@ body{
 
 .footer-social{
   width: 150px;
-  padding: 0;
-  margin: 0 0 61px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-social-item{
+  min-width: 40px;
+  min-height: 40px;
 }
 
 .footer-contacts-phone{
@@ -396,6 +526,11 @@ body{
   font-size: 16px;
   line-height: 20px;
   text-decoration-line: underline;
+}
+
+.logo-html-academy{
+  display: block;
+  margin-left: auto;
 }
 
 /*Страница каталога*/
@@ -422,17 +557,30 @@ body{
   opacity: 0.3;
 }
 
+.inner-header{
+  margin-bottom: 34px;
+}
+
 .inner-header-title{
   font-family: var(--common-font);
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  display: block;
+  margin: 0 0 16px;
+  padding-left: 60px;
 }
 
 .breadcrumbs{
   font-size: 16px;
   line-height: 20px;
+  padding-left: 60px;
+  display: flex;
+}
+
+.breadcrumbs-item:not(:last-child){
+  margin-right: 36px;
 }
 
 .breadcrumbs a{
@@ -442,6 +590,7 @@ body{
 
 .catalog-products{
   background-color: #F0F0F0;
+  margin-bottom: 0;
 }
 
 .filter-title, .goods-sorting{
@@ -452,6 +601,17 @@ body{
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.goods-sorting{
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-navigation{
+  width: 10px;
+  height: 10px;
+  margin: 10px;
 }
 
 .catalog-filter-group legend{
@@ -479,7 +639,7 @@ body{
 }
 
 .product-list{
-  padding: 0;
+  margin-bottom: 50px;
 }
 
 .product-list a{
@@ -521,8 +681,19 @@ body{
   opacity: 0.3;
 }
 
+.pagination-item:not(:last-child){
+  margin-right: 30px;
+}
+
+.pagination{
+  display: flex;
+  margin: 0 auto;
+}
+
 .catalog-page-navigation{
   background-color: #EBEBEB;
+  display: flex;
+  padding: 25px;
 }
 
 .pagination-prev-next{
