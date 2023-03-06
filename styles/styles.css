@@ -535,12 +535,6 @@ body{
 
 /*Страница каталога*/
 
-.catalog-container{
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0;
-}
-
 .catalog-filter{
   width: 220px;
   padding-top: 25px;
