@@ -154,6 +154,7 @@ body{
   display: flex;
   justify-content: space-between;
   padding: 0 60px;
+  padding-bottom: 30px;
 }
 
 .button-drop-menu{
@@ -166,7 +167,6 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 30px;
 }
 
 .navigation-item{
