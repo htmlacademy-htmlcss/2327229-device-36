@@ -370,6 +370,18 @@ body{
   background-color: transparent;
 }
 
+.slider-button:hover{
+  opacity: 50%;
+}
+
+.slider-button:active{
+  opacity: 20%;
+}
+
+.slider-button:focus{
+  border: 2px solid #AF4FFF;
+}
+
 .slider-pagination{
   list-style-type: none;
   display: flex;
@@ -387,6 +399,18 @@ body{
   background-color: transparent;
   width: 12px;
   height: 12px;
+}
+
+.slider-pagination-button:hover{
+  opacity: 50%;
+}
+
+.slider-pagination-button:active{
+  opacity: 20%;
+}
+
+.slider-pagination-button:focus svg{
+  border: 2px solid #AF4FFF;
 }
 
 .category-list{
@@ -809,7 +833,7 @@ body{
 }
 
 .footer-contacts-phone{
-  padding: 140px 0 0;
+  margin-top: 140px;
   margin-bottom: 63px;
   font-style: normal;
   font-size: 16px;
@@ -817,9 +841,41 @@ body{
   text-decoration-line: underline;
 }
 
-.logo-html-academy{
-  display: block;
-  margin-left: auto;
+.footer-contacts-phone:hover,
+.footer-contacts-phone:hover a
+{
+  color: #FFC700;
+}
+
+.footer-contacts-phone:active,
+.footer-contacts-phone:active a
+{
+  opacity: 40%;
+}
+
+.footer-contacts-phone:focus{
+  border: 2px solid #AF4FFF;
+}
+
+.footer-navigation-item:hover a{
+  color: #FFC700;
+  border-bottom: 2px solid #FFC700;
+}
+
+.footer-navigation-item:active a{
+  opacity: 20%;
+}
+
+.footer-navigation-item:focus a{
+  border: 2px solid #AF4FFF;
+}
+
+.htmlacademy-link:hover path{
+  fill: #FFFFFF
+}
+
+.htmlacademy-link:active path{
+  opacity: 20%;
 }
 
 /*Страница каталога*/
@@ -904,9 +960,22 @@ body{
 }
 
 .button-navigation{
-  width: 10px;
+  width: 11px;
   height: 10px;
-  margin: 10px;
+
+  padding: 10px 12px;
+}
+
+.button-navigation:hover path{
+  fill: #444444;
+}
+
+.button-navigation:active path{
+  fill: #000000;
+}
+
+.button-navigation:focus {
+  border: 2px solid #AF4FFF;
 }
 
 .catalog-filter-group legend{
@@ -926,6 +995,18 @@ body{
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+}
+
+.product-card:hover{
+  opacity: 50%;
+}
+
+.product-card:active{
+  opacity: 20%;
+}
+
+.product-card:focus{
+  border: 2px solid #AF4FFF;
 }
 
 .product-list-conteiner{
@@ -980,7 +1061,22 @@ body{
   border: 2px solid #EBEBEB;
   width: 100%;
   padding: 10px 0;
+}
+
+.button-more-container{
   margin-bottom: 52px;
+}
+
+.button-more:hover{
+  border-color: #000000;
+}
+
+.button-more:active{
+  opacity: 20%;
+}
+
+.button-more-container:focus{
+  border: 2px solid #AF4FFF;
 }
 
 .pagination-item{
@@ -1021,5 +1117,19 @@ body{
 
 .pagination-disabled{
   color: #444444;
-  opacity: 0.3;
+  opacity: 30%;
+}
+
+.pagination-link:hover{
+  color: #444444;
+  opacity: 100%;
+}
+
+.pagination-link:active{
+  opacity: 10%;
+}
+
+.pagination-link:focus{
+  padding: 10px 15px;
+  border: 2px solid #AF4FFF;
 }
