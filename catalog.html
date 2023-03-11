@@ -183,14 +183,14 @@
                 <option value="expensive">Дорогие</option>
               </select>
               <div class="buttons-navigation-container">
-                <a href="#" class="button-navigation">
+                <a href="#" class="button-navigation button-sorting-up">
                   <svg aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 0L11.5 10H0.5" fill="#bcbcbc" />
                   </svg>
                   <span class="visually-hidden">Показать cнизу вверх</span>
                 </a>
-                <a class="button-navigation" href="#">
+                <a href="#" class="button-navigation button-sorting-down">
                   <svg aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="#bcbcbc" />
@@ -202,13 +202,14 @@
             <div class="product-list-conteiner">
               <ul class="product-list list-reset">
                 <li class="product-card">
-                  <a class="product-card-link" href="#">
+                  <a class="product-card-link product-card-new" href="#">
                     <img class="product-card-image" src="images/catalog-1.jpg" width="360" height="380" alt="Монопод 1">
                     <div class="product-card-content-container">
                       <h3 class="product-card-title">Любительская селфи&nbsp;-&nbsp;палка</h3>
                       <b class="product-card-price">500 ₽</b>
                     </div>
                   </a>
+                  <button class="button-card-more button">Подробнее</button>
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="#">
@@ -218,6 +219,7 @@
                       <b class="product-card-price">1500 ₽</b>
                     </div>
                   </a>
+                  <button class="button-card-more button">Подробнее</button>
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="#">
@@ -227,6 +229,7 @@
                       <b class="product-card-price">2500 ₽</b>
                     </div>
                   </a>
+                  <button class="button-card-more button">Подробнее</button>
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="#">
@@ -236,6 +239,7 @@
                       <b class="product-card-price">1500 ₽</b>
                     </div>
                   </a>
+                  <button class="button-card-more button">Подробнее</button>
                 </li>
               </ul>
 
@@ -273,8 +277,8 @@
       <div class="container flex-container">
         <div class="footer-address-section">
           <h2 class="visually-hidden">Адрес</h2>
-          <a href="#">
-            <img class="footer-address-logo" src="images/logo-footer.svg" width="145" height="36"
+          <a class="footer-address-logo" href="#">
+            <img src="images/logo-footer.svg" width="145" height="36"
               alt="Логотип интернет-магазина Девайс">
           </a>
           <address class="footer-address">
