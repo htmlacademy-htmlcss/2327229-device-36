@@ -12,7 +12,7 @@
       <div class="container">
         <nav class="navigation">
 
-          <a href="index.html" class="link-logo">
+          <a class="link-logo">
             <img class="image-logo" src="images/logo-header.svg" width="145" height="36"
               alt="Логотип магазина «Девайс»">
           </a>
@@ -23,9 +23,15 @@
               <div class="container-search">
                 <form action="https://echo.htmlacademy.ru/" class="search-form" method="post">
                   <label for="site-search" class="visually-hidden">Поиск по сайту</label>
-                  <input id="site-search" class="search-input" type="text" name="site-search"
+                  <div class="site-search-wrapper">
+                    <input id="site-search" class="search-input" type="text" name="site-search"
                     placeholder="Поиск по сайту">
-                  <button class="search-button" type="submit">Найти</button>
+                  </div>
+                  <div class="search-button-wrapper">
+                    <button class="search-button" type="submit">
+                      <span>Найти</span>
+                    </button>
+                  </div>
                 </form>
                 <ul class="user-page-navigation list-reset">
                   <li class="user-page-navigation-item">
@@ -104,12 +110,12 @@
     <main class="page-main main-container">
       <h1 class="visually-hidden">Магазин "Девайс"</h1>
       <section class="slider">
-        <div class="container margin-bottom-container">
+        <div class="container margin-bottom-container slider-wrapper">
           <h2 class="visually-hidden">Презентация товаров</h2>
-          <div class="background-rectangle"></div>
+          <!--<div class="background-rectangle"></div>-->
 
           <ol class="list-reset">
-            <li class="slieder-item">
+            <li class="slieder-item slieder-item-one">
               <img class="slider-image" src="images/slider-quadrocopters.png" width="560" height="560"
                 alt="Квадракоптер">
               <div class="slider-description">
@@ -129,7 +135,7 @@
                 </div>
               </div>
             </li>
-            <li class="slieder-item">
+            <li class="slieder-item slieder-item-two visually-hidden">
               <img class="slider-image" src="images/slider-bracelet.png" width="560" height="560" alt="Фитнес-браслет">
               <div class="slider-description">
                 <strong>Худеем правильно!</strong>
@@ -143,7 +149,7 @@
                 </div>
               </div>
             </li>
-            <li class="slieder-item">
+            <li class="slieder-item slieder-item-three visually-hidden">
               <img class="slider-image" src="images/slider-monopod.png" width="560" height="560" alt="Селфи-палка">
               <div class="slider-description">
                 <strong>Делай селфи, как Бен Стиллер!</strong>
@@ -168,20 +174,22 @@
             </li>
           </ol>
 
-          <button class="slider-button slider-prev" type="button">
-            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60">
-              <path fill="#000" d="M20 60h-3.5L0 30 16.5
-              0H20L3.8 30 20 60Z" />
-            </svg>
-            <span class="visually-hidden">Предыдущий слайд</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60">
-              <path fill="#000" d="M0 0h3.5L20 30 3.5
-              60H0l16.2-30L0 0Z" />
-            </svg>
-            <span class="visually-hidden">Следующий слайд</span>
-          </button>
+          <div class="slider-button-wrapper">
+            <button class="slider-button slider-prev" type="button">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60">
+                <path fill="#000" d="M20 60h-3.5L0 30 16.5
+                0H20L3.8 30 20 60Z" />
+              </svg>
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60">
+                <path fill="#000" d="M0 0h3.5L20 30 3.5
+                60H0l16.2-30L0 0Z" />
+              </svg>
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+          </div>
 
           <ol class="slider-pagination list-reset">
             <li class="slider-pagination-item">
@@ -380,7 +388,9 @@
               <label for="newsletter-email" class="visually-hidden">Email</label>
               <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                 required>
-              <button class="button newsletter-button" type="submit">Подписаться</button>
+              <button class="button newsletter-button" type="submit">
+                <span class="newsletter-button-span">Подписаться</span>
+              </button>
             </form>
             <div class="addition">
               <svg class="addition-icon" aria-hidden="true" focusable="false" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
