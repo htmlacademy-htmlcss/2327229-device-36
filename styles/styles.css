@@ -240,6 +240,10 @@ body{
   flex-wrap: wrap;
 }
 
+.navigation-user-item{
+  position: relative;
+}
+
 .navigation-user-item:hover{
   opacity: 50%;
 }
@@ -254,6 +258,83 @@ body{
 
 .navigation-user-item:not(:first-child){
   margin-left: 33px;
+}
+
+.popover{
+  position: absolute;
+  width: 320px;
+  min-height: 134px;
+  top: 40px;
+  right: -80px;
+  z-index: 1;
+  background-color: #000000;
+  color: #FFFFFF;
+  display: none;
+}
+
+.popover-open {
+  display: block;
+}
+
+.cart-items-list{
+  width: 320px;
+}
+
+.cart-item{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  width: 320px;
+  padding: 20px;
+  display: flex;
+}
+
+.cart-item img{
+  margin-right: 23px;
+}
+
+.cart-item-title{
+  width: 151px;
+  margin: 0;
+}
+
+.cart-item-button{
+  background-color: transparent;
+  margin-left: auto;
+  width: 10px;
+  height: 10px;
+}
+
+.sum-container{
+  background-color: #1A1A1A;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sum-container p{
+  margin: 0;
+  width: 320px;
+}
+
+.button-popover{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 14px 20px;
+  margin: 20px;
+
+  box-sizing: content-box;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2em;
+  width: 240px;
+  border: none;
 }
 
 .page-header a{
@@ -273,6 +354,7 @@ body{
   display: flex;
   justify-content: space-between;
   padding: 0 60px;
+  position: relative;
 }
 
 .button-drop-menu{
@@ -287,6 +369,17 @@ body{
 
 .button-drop-menu:hover g, .button-drop-menu:hover circle{
   opacity: 100%;
+}
+
+.button-drop-menu::before{
+  position: absolute;
+  content: "";
+  width: 1160px;
+  height: 180px;
+  top: 19px;
+  left: 0;
+  z-index: 5;
+  background-color: #FFE17F;
 }
 
 .button-drop-menu:focus{
