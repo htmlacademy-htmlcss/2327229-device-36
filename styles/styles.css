@@ -2112,3 +2112,11 @@ body {
   background-repeat: no-repeat;
   background-position: right 21px center;
 }
+
+.modal-visually{
+  display: none;
+}
+
+.modal-open{
+  display: block;
+}
