@@ -73,8 +73,10 @@
                     <h2 class="visually-hidden">Корзина</h2>
                     <ul class="cart-items-list list-reset">
                       <li class="cart-item">
-                        <img src="images/product-1.jpg" width="39px" height="43px" alt="">
-                        <p class="cart-item-title">Любительская селфи-палка</p>
+                        <div class="cart-item-content-container">
+                          <img src="images/product-1.jpg" width="39px" height="43px" alt="">
+                          <p class="cart-item-title">Любительская селфи-палка</p>
+                        </div>
                         <button type="button" class="cart-item-button">
                           <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -86,8 +88,10 @@
                         </button>
                       </li>
                       <li class="cart-item">
-                        <img src="images/product-2.jpg" width="39px" height="43px" alt="">
-                        <p class="cart-item-title">Профессиональная селфи-палка</p>
+                        <div class="cart-item-content-container">
+                          <img src="images/product-2.jpg" width="39px" height="43px" alt="">
+                          <p class="cart-item-title">Профессиональная селфи-палка</p>
+                        </div>
                         <button class="cart-item-button" type="button">
                           <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +112,9 @@
                         <span>2000 ₽</span>
                       </p>
                     </div>
-                    <button class="button-popover">Открыть корзину</button>
+                    <button class="button-popover">
+                      <span>Открыть корзину</span>
+                    </button>
                   </div>
                 </li>
               </ul>
@@ -187,59 +193,67 @@
           <!--<div class="background-rectangle"></div>-->
 
           <ol class="list-reset">
-            <li class="slieder-item slieder-item-one">
-              <img class="slider-image" src="images/slider-quadrocopters.png" width="560" height="560"
-                alt="Квадракоптер">
-              <div class="slider-description">
-                <strong>Порхает как бабочка, жалит как пчела!</strong>
-                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
-                  камеру.</p>
-                <a class="button button-slider button-decore" href="#">Подробнее</a>
-                <div class="characteristic-product">
-                  <div class="characteristic-product-colomn">
-                    <span class="characteristic-product-value">800 м</span>
-                    <span class="characteristic-product-name">Дальность полета</span>
-                  </div>
-                  <div class="characteristic-product-colomn">
-                    <span class="characteristic-product-value">50 м</span>
-                    <span class="characteristic-product-name">Радиус поражения</span>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="slieder-item slieder-item-two visually-hidden">
-              <img class="slider-image" src="images/slider-bracelet.png" width="560" height="560" alt="Фитнес-браслет">
-              <div class="slider-description">
-                <strong>Худеем правильно!</strong>
-                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <a class="button button-slider button-decore" href="#">Подробнее</a>
-                <div class="characteristic-product">
-                  <div class="characteristic-product-colomn">
-                    <span class="characteristic-product-value">48 часов</span>
-                    <span class="characteristic-product-name">Без подзарядки</span>
+            <li class="slieder-item slieder-item-one slieder-item-active">
+              <div class="slieder-item-container">
+                <img class="slider-image" src="images/slider-quadrocopters.png" width="560" height="560"
+                  alt="Квадрокоптер">
+                <div class="slider-description">
+                  <strong>Порхает как бабочка, жалит как пчела!</strong>
+                  <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под
+                    стандартную
+                    камеру.</p>
+                  <a class="button button-slider button-decore" href="#">Подробнее</a>
+                  <div class="characteristic-product">
+                    <div class="characteristic-product-colomn">
+                      <span class="characteristic-product-value">800 м</span>
+                      <span class="characteristic-product-name">Дальность полета</span>
+                    </div>
+                    <div class="characteristic-product-colomn">
+                      <span class="characteristic-product-value">50 м</span>
+                      <span class="characteristic-product-name">Радиус поражения</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="slieder-item slieder-item-three visually-hidden">
-              <img class="slider-image" src="images/slider-monopod.png" width="560" height="560" alt="Селфи-палка">
-              <div class="slider-description">
-                <strong>Делай селфи, как Бен Стиллер!</strong>
-                <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
-                  всего 5 кг.</p>
-                <a class="button button-slider button-decore" href="#">Подробнее</a>
-                <div class="characteristic-product">
-                  <div class="characteristic-product-colomn">
-                    <span class="characteristic-product-value">8,5 м</span>
-                    <span class="characteristic-product-name">Длина палки</span>
+            <li class="slieder-item slieder-item-two">
+              <div class="slieder-item-container">
+                <img class="slider-image" src="images/slider-bracelet.png" width="560" height="560"
+                  alt="Фитнес-браслет">
+                <div class="slider-description">
+                  <strong>Худеем<br> правильно!</strong>
+                  <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                  <a class="button button-slider button-decore" href="#">Подробнее</a>
+                  <div class="characteristic-product">
+                    <div class="characteristic-product-colomn">
+                      <span class="characteristic-product-value">48 часов</span>
+                      <span class="characteristic-product-name">Без подзарядки</span>
+                    </div>
                   </div>
-                  <div class="characteristic-product-colomn">
-                    <span class="characteristic-product-value">5 кг</span>
-                    <span class="characteristic-product-name">Вес палки</span>
-                  </div>
-                  <div class="characteristic-product-colomn">
-                    <span class="characteristic-product-value">Карбон</span>
-                    <span class="characteristic-product-name">Материал</span>
+                </div>
+              </div>
+            </li>
+            <li class="slieder-item slieder-item-three">
+              <div class="slieder-item-container">
+                <img class="slider-image" src="images/slider-monopod.png" width="560" height="560" alt="Селфи-палка">
+                <div class="slider-description">
+                  <strong>Делай селфи,<br> как Бен Стиллер!</strong>
+                  <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и
+                    весом всего 5 кг.</p>
+                  <a class="button button-slider button-decore" href="#">Подробнее</a>
+                  <div class="characteristic-product">
+                    <div class="characteristic-product-colomn">
+                      <span class="characteristic-product-value">8,5 м</span>
+                      <span class="characteristic-product-name">Длина палки</span>
+                    </div>
+                    <div class="characteristic-product-colomn">
+                      <span class="characteristic-product-value">5 кг</span>
+                      <span class="characteristic-product-name">Вес палки</span>
+                    </div>
+                    <div class="characteristic-product-colomn">
+                      <span class="characteristic-product-value">Карбон</span>
+                      <span class="characteristic-product-name">Материал</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -365,14 +379,42 @@
               </li>
             </ul>
           </div>
-          <div class="description">
-            <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо<br>
-              к вашему подъезду совершенно бесплатно! Ведь<br>
-              мы неплохо заработаем, поднимая его на ваш этаж.
-            </p>
+          <div class="additional-terms-wrapper description-active">
+            <div class="description">
+              <div class="description-container">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно! Ведь<br>
+                  мы неплохо заработаем, поднимая его на ваш этаж.
+                </p>
+              </div>
+              <img class="delivery-image" src="images/delivery.png" alt="Доставка" width="136" height="164">
+            </div>
           </div>
-          <img class="delivery-image" src="images/delivery.png" alt="Доставка" width="136" height="164">
+          <div class="additional-terms-wrapper">
+            <div class="description">
+              <div class="description-container">
+                <h3>Гарантия</h3>
+                <p>Если из-за возгорания купленного у нас товара у вас<br>
+                  сгорит дом — не переживайте, мы выдадим вам новый.<br>
+                  Товар, не дом, конечно же.
+                </p>
+              </div>
+              <img class="delivery-image" src="images/guarantee.png" alt="Гарантия" width="136" height="164">
+            </div>
+          </div>
+          <div class="additional-terms-wrapper">
+            <div class=" description">
+              <div class="description-container">
+                <h3>Кредит</h3>
+                <p>Залезть в долговую яму стало проще! Кредитные<br>
+                  консультанты подберут для вас наиболее выгодные<br>
+                  условия кредита. Выгодные для банка, разумеется.
+                </p>
+              </div>
+              <img class="delivery-image" src="images/credit.png" alt="Кредит" width="136" height="164">
+            </div>
+          </div>
         </div>
 
       </section>
@@ -396,6 +438,20 @@
               </svg>
             </div>
             <span>Доставим редкий товар под заказ</span>
+            <div class="container-icon-i">
+              <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5"/>
+                <g clip-path="url(#clip0_11468_3000)">
+                <path d="M21 14H19V16H21V14Z" fill="black"/>
+                <path d="M21 18H19V26H21V18Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_11468_3000">
+                <rect width="2" height="12" fill="white" transform="translate(19 14)"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
           </button>
         </div>
       </section>
@@ -597,6 +653,49 @@
       </div>
 
     </footer>
+
+    <div class="modal-container">
+      <div class="modal modal-window">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-container-field-name">
+              <p class="field-group">
+                <label class="modal-label" for="name-modal">Ваше имя:</label>
+                <input class="modal-input-name field-modal" type="text" id="name-modal" name="name-modal" placeholder="Введите имя">
+              </p>
+              <p class="field-group">
+                <label class="modal-label" for="e-mail">Ваш e-mail:</label>
+                <input class="modal-input-email field-modal" type="email" id="modal-e-mail" name="e-mail" placeholder="Введите e-mail">
+              </p>
+            </div>
+            <div class="modal-container-order">
+              <p class="field-group">
+                <label class="modal-label" for="name-modal">Что нужно привезти:</label>
+                <input class="modal-input-order field-modal-order" type="text" id="name-modal" name="name-modal" placeholder="В свободной форме">
+              </p>
+              <p class="field-group field-quantity-container">
+                <label class="modal-label-quantity" for="number-modal">Количество:</label>
+                <div class="field-quantity">
+                  <button class="button-modal-less button-field-quantity"></button>
+                  <input class="modal-number-input" type="number" id="number-modal" value="1" name="number-modal">
+                  <button class="button-modal-more button-field-quantity"></button>
+                </div>
+              </p>
+            </div>
+            <button class="button button-decore">
+              <span>Отправить</span>
+            </button>
+
+
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>
