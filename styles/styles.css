@@ -1884,6 +1884,18 @@ body {
   cursor: pointer;
 }
 
+.modal-close-button:hover{
+  opacity: 50%;
+}
+
+.modal-close-button:active{
+  opacity: 20%;
+}
+
+.modal-close-button:focus{
+  outline: 2px solid #AF4FFF;
+}
+
 .modal-title {
   font-family: 'Raleway';
   font-style: normal;
@@ -1927,6 +1939,18 @@ body {
   background-color: #F0F0F0;
 }
 
+.field-modal:hover{
+  background-color: #DCDCDC;
+}
+
+.field-modal:focus{
+  outline: 2px solid #AF4FFF;
+}
+
+.field-modal:disabled{
+  opacity: 30%;
+}
+
 .field-modal::placeholder{
   font-family: 'Rubik';
   font-style: normal;
@@ -1946,6 +1970,18 @@ body {
   background-color: #F0F0F0;
 }
 
+.field-modal-order:hover{
+  background-color: #DCDCDC;
+}
+
+.field-modal-order:focus{
+  outline: 2px solid #AF4FFF;
+}
+
+.field-modal-order:disabled{
+  opacity: 30%;
+}
+
 .field-modal-order::placeholder{
   font-family: 'Rubik';
   font-style: normal;
@@ -1957,6 +1993,8 @@ body {
 .field-quantity-container{
   display: flex;
   flex-direction: column;
+  width: 180px;
+  position: relative;
 }
 
 .modal-label-quantity{
@@ -1968,6 +2006,49 @@ body {
   letter-spacing: -0.02em;
   display: block;
   margin-bottom: 14px;
+}
+
+.popover-modal{
+  width: 200px;
+  height: 160px;
+  background-color: #000000;
+  position: absolute;
+  z-index: 1;
+  top: 35px;
+  color: #FFFFFF;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 19px;
+  display: none;
+}
+
+.popover-modal::before{
+  content: url(/images/arrow-popover.svg);
+  position: absolute;
+  top: -12px;
+  left: 127px;
+}
+
+.popover-modal-container:hover .popover-modal{
+  display: block;
+}
+
+.modal-label-quantity-svg{
+  position: absolute;
+  top: -4px;
+  left: 120px;
+  cursor: pointer;
+}
+
+.modal-label-quantity-svg:hover::before{
+  width: 200px;
+  height: 160px;
+  background-color: #000000;
+  content: "";
+  z-index: 11px;
 }
 
 .field-quantity{
@@ -2006,6 +2087,7 @@ body {
   height: 60px;
   border: none;
   position: relative;
+  cursor: pointer;
 }
 
 .button-modal-less::before{
@@ -2017,4 +2099,16 @@ body {
 
 .button-modal-more::before{
   content: url(/images/plus-modal.svg);
+}
+
+.modal-input-name{
+  background-image: url(/images/input-name-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right 21px center;
+}
+
+.modal-input-email{
+  background-image: url(/images/input-email-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right 21px center;
 }
