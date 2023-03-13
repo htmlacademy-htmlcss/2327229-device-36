@@ -81,6 +81,7 @@ body{
 
 .navigation{
   margin-top: 40px;
+  padding-bottom: 20px;
   background-color:  #FFE17F;
 }
 
@@ -367,18 +368,74 @@ body{
   margin-top: 15px;
 }
 
+.button-drop-menu svg{
+  z-index: 5;
+}
+
+.drop-menu-list{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
+  letter-spacing: 0;
+  z-index: 10;
+
+  display: flex;
+  position: absolute;
+  top: 70px;
+  left: 60px;
+}
+
+.drop-menu-items-container{
+  width: 211px;
+  height: 120px;
+}
+
+.drop-menu-items-container:not(:last-child){
+  margin-right: 40px;
+}
+
+.drop-menu-item:not(:last-child){
+  margin-bottom: 24px;
+}
+
+.drop-menu-item:hover{
+  opacity: 50%;
+}
+
+.drop-menu-item-action a{
+  border-bottom: 1px solid #000000;
+}
+
+.drop-menu-item:active{
+  opacity: 20%;
+}
+
+.drop-menu-item a:focus{
+  outline: 2px solid #AF4FFF;
+}
+
+/**/
+
 .button-drop-menu:hover g, .button-drop-menu:hover circle{
   opacity: 100%;
 }
 
-.button-drop-menu::before{
+.button-drop-menu:active .drop-menu-list{
+  display: block;
+  z-index: 5;
+}
+
+.button-drop-menu:active::before{
   position: absolute;
   content: "";
   width: 1160px;
-  height: 180px;
-  top: 19px;
+  height: 210px;
+  top: 35px;
   left: 0;
-  z-index: 5;
+  z-index: 1;
   background-color: #FFE17F;
 }
 
@@ -396,6 +453,10 @@ body{
 
 .navigation-item{
   margin-top: 15px;
+}
+
+.navigation-item-active a{
+  border-bottom: 2px solid #000000;
 }
 
 .navigation-item:not(:last-child){
@@ -439,8 +500,8 @@ body{
   height: 135px;
   width: 200px;
   z-index: -1;
-  left: 1140px;
-  top: 240px;
+  left: 910px;
+  top: 30px;
   background-image: url(/images/01.svg);
   background-repeat: no-repeat;
 }
@@ -451,8 +512,8 @@ body{
   height: 135px;
   width: 230px;
   z-index: -1;
-  left: 1110px;
-  top: 240px;
+  left: 890px;
+  top: 30px;
   background-image: url(/images/02.svg);
   background-repeat: no-repeat;
 }
@@ -463,8 +524,8 @@ body{
   height: 135px;
   width: 230px;
   z-index: -1;
-  left: 1110px;
-  top: 240px;
+  left: 890px;
+  top: 30px;
   background-image: url(/images/03.svg);
   background-repeat: no-repeat;
 }
