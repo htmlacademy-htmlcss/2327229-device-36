@@ -125,6 +125,7 @@ body {
 .search-form {
   width: 533px;
   display: flex;
+  margin-right: 20px;
 }
 
 .site-search-wrapper {
@@ -283,12 +284,11 @@ body {
   width: 320px;
 }
 
-.popover::before{
-  width: 14px;
-  height: 14px;
-  background-color: red;
+.cart-items-list::before{
+  content: url(/images/arrow-popover.svg);
   position: absolute;
-  top: 10px;
+  left: 150px;
+  top: -20px;
 }
 
 .cart-item {
@@ -317,6 +317,7 @@ body {
   margin-left: auto;
   width: 10px;
   height: 10px;
+  cursor: pointer;
 }
 
 .sum-container {
@@ -346,6 +347,7 @@ body {
   letter-spacing: 0.2em;
   width: 240px;
   border: none;
+  cursor: pointer;
 }
 
 .page-header a {
