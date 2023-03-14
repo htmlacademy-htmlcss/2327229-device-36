@@ -146,7 +146,7 @@ body {
   padding-left: 45px;
   background-color: #FFE17F;
   border-radius: 20px 0 0 20px;
-  background-image: url("/images/search.svg");
+  background-image: url("./images/search.svg");
   background-repeat: no-repeat;
   background-position: left 16px center;
 
@@ -257,7 +257,7 @@ body {
 }
 
 .quantity-units{
-  background-image: url("/images/circle-white.svg");
+  background-image: url("./images/circle-white.svg");
   background-repeat: no-repeat;
   width: 21px;
   height: 21px;
@@ -310,7 +310,7 @@ body {
 }
 
 .cart-items-list::before{
-  content: url("/images/arrow-popover.svg");
+  content: url("./images/arrow-popover.svg");
   position: absolute;
   left: 150px;
   top: -20px;
@@ -595,7 +595,7 @@ body {
   z-index: -1;
   left: 910px;
   top: 30px;
-  background-image: url("/images/01.svg");
+  background-image: url("./images/01.svg");
   background-repeat: no-repeat;
 }
 
@@ -607,7 +607,7 @@ body {
   z-index: -1;
   left: 890px;
   top: 30px;
-  background-image: url("/images/02.svg");
+  background-image: url("./images/02.svg");
   background-repeat: no-repeat;
 }
 
@@ -619,7 +619,7 @@ body {
   z-index: -1;
   left: 890px;
   top: 30px;
-  background-image: url("/images/03.svg");
+  background-image: url("./images/03.svg");
   background-repeat: no-repeat;
 }
 
@@ -1378,7 +1378,7 @@ body {
 
 .breadcrumbs-item:not(:last-child)::after {
   padding: 0 16px;
-  content: url("/images/arrow-breadcrumbs.svg");
+  content: url("./images/arrow-breadcrumbs.svg");
   opacity: 30%;
 }
 
@@ -1625,7 +1625,7 @@ body {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
-  content: url("/images/check.svg");
+  content: url("./images/check.svg");
 }
 
 .control-mark-radio {
@@ -1662,7 +1662,7 @@ body {
 
   width: 140px;
   background-color: #F0F0F0;
-  background-image: url("/images/sorting.svg");
+  background-image: url("./images/sorting.svg");
   background-repeat: no-repeat;
   background-position: right 10px center;
   border: none;
@@ -1689,7 +1689,7 @@ body {
 }
 
 .product-card-new::after {
-  content: url("/images/new-label.svg");
+  content: url("./images/new-label.svg");
   position: absolute;
   top: 27px;
   left: 273px;
@@ -1915,7 +1915,7 @@ body {
   height: 44px;
   background-color: #ffffff;
   border: none;
-  background-image: url("/images/close-black.svg");
+  background-image: url("./images/close-black.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -2063,7 +2063,7 @@ body {
 }
 
 .popover-modal::before{
-  content: url("/images/arrow-popover.svg");
+  content: url("./images/arrow-popover.svg");
   position: absolute;
   top: -12px;
   left: 127px;
@@ -2128,24 +2128,24 @@ body {
 }
 
 .button-modal-less::before{
-  content: url("/images/minus-modal.svg");
+  content: url("./images/minus-modal.svg");
   position: absolute;
   top: 20px;
   left: 22px;
 }
 
 .button-modal-more::before{
-  content: url("/images/plus-modal.svg");
+  content: url("./images/plus-modal.svg");
 }
 
 .modal-input-name{
-  background-image: url("/images/input-name-icon.svg");
+  background-image: url("./images/input-name-icon.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
 }
 
 .modal-input-email{
-  background-image: url("/images/input-email-icon.svg");
+  background-image: url("./images/input-email-icon.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
 }
