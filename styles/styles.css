@@ -192,7 +192,7 @@ body {
   background-color: #FFE17F;
   padding: 8px 54px;
   border-radius: 0 20px 20px 0;
-  position: absolute;
+  position: relative;
   left: -2px;
 }
 
@@ -1371,6 +1371,10 @@ body {
 
 /*Страница каталога*/
 
+.navigation-catalog{
+  padding-bottom: 20px;
+}
+
 .catalog-filter {
   width: 220px;
   padding-top: 25px;
@@ -1381,7 +1385,7 @@ body {
 }
 
 .goods-sorting {
-  padding: 25px 40px;
+  padding: 19px 40px;
 }
 
 .main-inner a {
@@ -1445,11 +1449,14 @@ body {
   margin-bottom: 0;
 }
 
+.flex-container-main-catalog{
+  display: flex;
+}
+
 .catalog-filter-section {
   box-sizing: content-box;
   width: 200px;
-  padding-top: 25px;
-  padding-right: 60px;
+  padding: 25px 60px 0 60px;
 }
 
 .catalog-filter {
@@ -1510,8 +1517,8 @@ body {
 .range-toggle {
   position: absolute;
   padding: 0;
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   background-color: #F0F0F0;
   border: 2px solid #000000;
   border-radius: 50%;
@@ -1520,7 +1527,7 @@ body {
 
 .toggle-min {
   top: -10px;
-  left: -10px;
+  left: -9px;
 }
 
 .toggle-max {
