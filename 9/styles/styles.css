@@ -40,6 +40,10 @@ html {
   box-sizing: inherit;
 }
 
+svg:focus, path:focus{
+  outline: none;
+}
+
 body {
   font-family: var(--main-font);
   font-style: normal;
@@ -142,7 +146,7 @@ body {
   padding-left: 45px;
   background-color: #FFE17F;
   border-radius: 20px 0 0 20px;
-  background-image: url(/images/search.svg);
+  background-image: url("/images/search.svg");
   background-repeat: no-repeat;
   background-position: left 16px center;
 
@@ -248,6 +252,27 @@ body {
   position: relative;
 }
 
+.navigation-user-button{
+  position: relative;
+}
+
+.quantity-units{
+  background-image: url("/images/circle-white.svg");
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 0;
+  left: -15px;
+}
+
+.quantity-units span{
+  position: relative;
+  top: -5px;
+  left: 6px;
+  font-size: 14px;
+}
+
 .navigation-user-button:hover {
   opacity: 50%;
 }
@@ -285,7 +310,7 @@ body {
 }
 
 .cart-items-list::before{
-  content: url(/images/arrow-popover.svg);
+  content: url("/images/arrow-popover.svg");
   position: absolute;
   left: 150px;
   top: -20px;
@@ -428,6 +453,17 @@ body {
   z-index: 5;
 }
 
+.drop-menu-container{
+  display: none;
+}
+
+.drop-menu-container-flex{
+  display: flex;
+  position: absolute;
+  top: 70px;
+  left: 60px;
+}
+
 .drop-menu-list {
   font-family: 'Rubik';
   font-style: normal;
@@ -438,31 +474,25 @@ body {
   letter-spacing: 0;
   z-index: 10;
 
-  display: flex;
-  position: absolute;
-  top: 70px;
-  left: 60px;
+  margin-right: 50px;
 }
 
-.drop-menu-items-container {
+/*.drop-menu-items-container {
   width: 211px;
   height: 120px;
-}
-
-.drop-menu-items-container:not(:last-child) {
-  margin-right: 40px;
-}
+}*/
 
 .drop-menu-item:not(:last-child) {
   margin-bottom: 24px;
 }
 
-.drop-menu-item:hover {
-  opacity: 50%;
-}
-
 .drop-menu-item-action a {
   border-bottom: 1px solid #000000;
+}
+
+.drop-menu-item:hover {
+  opacity: 50%;
+  cursor: pointer;
 }
 
 .drop-menu-item:active {
@@ -473,14 +503,12 @@ body {
   outline: 2px solid #AF4FFF;
 }
 
-/**/
-
 .button-drop-menu:hover g,
 .button-drop-menu:hover circle {
   opacity: 100%;
 }
 
-.button-drop-menu:active .drop-menu-list {
+.button-drop-menu:active + .drop-menu-container {
   display: block;
   z-index: 5;
 }
@@ -536,20 +564,20 @@ body {
   position: relative;
 }
 
-.slieder-item {
+.slider-item {
   display: none;
 }
 
-.slieder-item-active{
+.slider-item-active{
   display: block;
 }
 
-.slieder-item-container{
+.slider-item-container{
   display: flex;
   justify-content: space-between;
 }
 
-.slieder-item::before {
+.slider-item::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -559,7 +587,7 @@ body {
   background-color: #FFE17F;
 }
 
-.slieder-item-one::after {
+.slider-item-one::after {
   position: absolute;
   content: "";
   height: 135px;
@@ -567,11 +595,11 @@ body {
   z-index: -1;
   left: 910px;
   top: 30px;
-  background-image: url(/images/01.svg);
+  background-image: url("/images/01.svg");
   background-repeat: no-repeat;
 }
 
-.slieder-item-two::after {
+.slider-item-two::after {
   position: absolute;
   content: "";
   height: 135px;
@@ -579,11 +607,11 @@ body {
   z-index: -1;
   left: 890px;
   top: 30px;
-  background-image: url(/images/02.svg);
+  background-image: url("/images/02.svg");
   background-repeat: no-repeat;
 }
 
-.slieder-item-three::after {
+.slider-item-three::after {
   position: absolute;
   content: "";
   height: 135px;
@@ -591,15 +619,9 @@ body {
   z-index: -1;
   left: 890px;
   top: 30px;
-  background-image: url(/images/03.svg);
+  background-image: url("/images/03.svg");
   background-repeat: no-repeat;
 }
-
-/*.background-rectangle{
-  width: 100%;
-  height: 114px;
-  background-color: #FFE17F;
-}*/
 
 .slider-description {
   width: 560px;
@@ -905,6 +927,7 @@ body {
   width: 125px;
   height: 103px;
   background-color: #FFE17F;
+  display: block;
 }
 
 .courier-icon-svg {
@@ -921,7 +944,7 @@ body {
   width: 100%;
 }
 
-.button-delivery-on-order span {
+.button-delivery-on-order-title {
   display: block;
   padding: 40px 0;
   width: 910px;
@@ -1355,7 +1378,7 @@ body {
 
 .breadcrumbs-item:not(:last-child)::after {
   padding: 0 16px;
-  content: url(/images/arrow-breadcrumbs.svg);
+  content: url("/images/arrow-breadcrumbs.svg");
   opacity: 30%;
 }
 
@@ -1473,6 +1496,20 @@ body {
   font-size: 14px;
 }
 
+.from-to{
+  position: relative;
+  left: -15px;
+  padding-top: 11px;
+}
+
+.from-to span{
+  opacity: 30%;
+}
+
+.from-to-min{
+  margin-right: 46px;
+}
+
 .range-input {
   font: inherit;
   text-align: center;
@@ -1588,7 +1625,7 @@ body {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
-  content: url(/images/check.svg);
+  content: url("/images/check.svg");
 }
 
 .control-mark-radio {
@@ -1625,7 +1662,7 @@ body {
 
   width: 140px;
   background-color: #F0F0F0;
-  background-image: url(/images/sorting.svg);
+  background-image: url("/images/sorting.svg");
   background-repeat: no-repeat;
   background-position: right 10px center;
   border: none;
@@ -1652,7 +1689,7 @@ body {
 }
 
 .product-card-new::after {
-  content: url(/images/new-label.svg);
+  content: url("/images/new-label.svg");
   position: absolute;
   top: 27px;
   left: 273px;
@@ -1878,7 +1915,7 @@ body {
   height: 44px;
   background-color: #ffffff;
   border: none;
-  background-image: url(/images/close-black.svg);
+  background-image: url("/images/close-black.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -2026,7 +2063,7 @@ body {
 }
 
 .popover-modal::before{
-  content: url(/images/arrow-popover.svg);
+  content: url("/images/arrow-popover.svg");
   position: absolute;
   top: -12px;
   left: 127px;
@@ -2091,24 +2128,24 @@ body {
 }
 
 .button-modal-less::before{
-  content: url(/images/minus-modal.svg);
+  content: url("/images/minus-modal.svg");
   position: absolute;
   top: 20px;
   left: 22px;
 }
 
 .button-modal-more::before{
-  content: url(/images/plus-modal.svg);
+  content: url("/images/plus-modal.svg");
 }
 
 .modal-input-name{
-  background-image: url(/images/input-name-icon.svg);
+  background-image: url("/images/input-name-icon.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
 }
 
 .modal-input-email{
-  background-image: url(/images/input-email-icon.svg);
+  background-image: url("/images/input-email-icon.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
 }

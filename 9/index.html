@@ -68,6 +68,9 @@
                     1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8
                     1.9Z" />
                     </svg>
+                    <div class="quantity-units">
+                      <span>2</span>
+                    </div>
                     <span>Корзина</span>
                   </a>
                   <div class="popover">
@@ -75,7 +78,7 @@
                     <ul class="cart-items-list list-reset">
                       <li class="cart-item">
                         <div class="cart-item-content-container">
-                          <img src="images/product-1.jpg" width="39px" height="43px" alt="">
+                          <img src="images/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
                           <p class="cart-item-title">Любительская селфи-палка</p>
                         </div>
                         <button type="button" class="cart-item-button">
@@ -90,7 +93,7 @@
                       </li>
                       <li class="cart-item">
                         <div class="cart-item-content-container">
-                          <img src="images/product-2.jpg" width="39px" height="43px" alt="">
+                          <img src="images/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
                           <p class="cart-item-title">Профессиональная селфи-палка</p>
                         </div>
                         <button class="cart-item-button" type="button">
@@ -123,6 +126,7 @@
           </section>
 
           <section class="site-navigation">
+            <h2 class="visually-hidden">Навигация по сайту</h2>
             <div class="button-drop-menu-wrapper">
               <a href="#" class="button-drop-menu">
                 <span>Каталог товаров</span>
@@ -139,33 +143,34 @@
                   </defs>
                 </svg>
               </a>
-              <ul class="drop-menu-list list-reset">
-                <div class="drop-menu-items-container">
-                  <li class="drop-menu-item drop-menu-item-action">
-                    <a href="#">Виртуальная реальность</a>
-                  </li>
-                  <li class="drop-menu-item">
-                    <a href="#">Моноподы для селфи</a>
-                  </li>
-                  <li class="drop-menu-item">
-                    <a href="#">Экшн-камеры</a>
-                  </li>
+              <div class="drop-menu-container">
+                <div class="drop-menu-container-flex">
+                  <ul class="drop-menu-list list-reset">
+                    <li class="drop-menu-item">
+                      <a href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="drop-menu-item">
+                      <a href="#">Моноподы для селфи</a>
+                    </li>
+                    <li class="drop-menu-item">
+                      <a href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                  <ul class="drop-menu-list list-reset">
+                    <li class="drop-menu-item">
+                      <a href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li class="drop-menu-item">
+                      <a href="#">Умные часы</a>
+                    </li>
+                  </ul>
+                  <ul class="drop-menu-list list-reset">
+                    <li class="drop-menu-item">
+                      <a href="#">Квадрoкоптеры</a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="drop-menu-items-container">
-                  <li class="drop-menu-item">
-                    <a href="#">Фитнес-браслеты</a>
-                  </li>
-                  <li class="drop-menu-item">
-                    <a href="#">Умные часы</a>
-                  </li>
-                </div>
-                <div class="drop-menu-items-container">
-                  <li class="drop-menu-item">
-                    <a href="#">Квадрoкоптеры</a>
-                  </li>
-                </div>
-              </ul>
-
+              </div>
             </div>
 
             <ul class="navigation-list list-reset">
@@ -191,11 +196,9 @@
       <section class="slider">
         <div class="container margin-bottom-container slider-wrapper">
           <h2 class="visually-hidden">Презентация товаров</h2>
-          <!--<div class="background-rectangle"></div>-->
-
           <ol class="list-reset">
-            <li class="slieder-item slieder-item-one slieder-item-active">
-              <div class="slieder-item-container">
+            <li class="slider-item slider-item-one slider-item-active">
+              <div class="slider-item-container">
                 <img class="slider-image" src="images/slider-quadrocopters.png" width="560" height="560"
                   alt="Квадрокоптер">
                 <div class="slider-description">
@@ -217,8 +220,8 @@
                 </div>
               </div>
             </li>
-            <li class="slieder-item slieder-item-two">
-              <div class="slieder-item-container">
+            <li class="slider-item slider-item-two">
+              <div class="slider-item-container">
                 <img class="slider-image" src="images/slider-bracelet.png" width="560" height="560"
                   alt="Фитнес-браслет">
                 <div class="slider-description">
@@ -234,8 +237,8 @@
                 </div>
               </div>
             </li>
-            <li class="slieder-item slieder-item-three">
-              <div class="slieder-item-container">
+            <li class="slider-item slider-item-three">
+              <div class="slider-item-container">
                 <img class="slider-image" src="images/slider-monopod.png" width="560" height="560" alt="Селфи-палка">
                 <div class="slider-description">
                   <strong>Делай селфи,<br> как Бен Стиллер!</strong>
@@ -424,7 +427,7 @@
         <div class="container margin-bottom-container">
           <h2 class="visually-hidden">Доставка под заказ</h2>
           <button class="button button-delivery-on-order">
-            <div class="courier-icon">
+            <span class="courier-icon">
               <svg class="courier-icon-svg" aria-hidden="true" focusable="false" width="47" height="31"
                 viewBox="0 0 47 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -437,9 +440,9 @@
                   d="M17.7 14.7C17.7 13.9 17 13.2 16.2 13.2H1.5C0.7 13.2 0 13.9 0 14.7C0 15.5 0.7 16.2 1.5 16.2H16.2C17 16.2 17.7 15.5 17.7 14.7Z"
                   fill="black" />
               </svg>
-            </div>
-            <span>Доставим редкий товар под заказ</span>
-            <div class="container-icon-i">
+            </span>
+            <span class="button-delivery-on-order-title">Доставим редкий товар под заказ</span>
+            <span class="container-icon-i">
               <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5" />
                 <g clip-path="url(#clip0_11468_3000)">
@@ -452,7 +455,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </div>
+            </span>
           </button>
         </div>
       </section>
@@ -671,16 +674,16 @@
                     placeholder="Введите имя">
                 </p>
                 <p class="field-group">
-                  <label class="modal-label" for="e-mail">Ваш e-mail:</label>
+                  <label class="modal-label">Ваш e-mail:</label>
                   <input class="modal-input-email field-modal" type="email" id="modal-e-mail" name="e-mail"
                     placeholder="Введите e-mail">
                 </p>
               </div>
               <div class="modal-container-order">
                 <div class="field-group">
-                  <label class="modal-label" for="name-modal">Что нужно привезти:</label>
-                  <input class="modal-input-order field-modal-order" type="text" id="name-modal" name="name-modal"
-                    placeholder="В свободной форме">
+                  <label class="modal-label" for="modal-input-order">Что нужно привезти:</label>
+                  <input class="modal-input-order field-modal-order" type="text" id="modal-input-order"
+                    name="modal-input-order" placeholder="В свободной форме">
                 </div>
                 <div class="field-group field-quantity-container">
                   <label class="modal-label-quantity" for="number-modal">Количество:</label>
