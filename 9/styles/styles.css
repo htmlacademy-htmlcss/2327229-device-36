@@ -146,7 +146,7 @@ body {
   padding-left: 45px;
   background-color: #FFE17F;
   border-radius: 20px 0 0 20px;
-  background-image: url(images/search.svg);
+  background-image: url("images/search.svg");
   background-repeat: no-repeat;
   background-position: left 16px center;
 
