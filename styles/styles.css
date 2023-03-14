@@ -1473,6 +1473,20 @@ body {
   font-size: 14px;
 }
 
+.from-to{
+  position: relative;
+  left: -15px;
+  padding-top: 11px;
+}
+
+.from-to span{
+  opacity: 30%;
+}
+
+.from-to-min{
+  margin-right: 46px;
+}
+
 .range-input {
   font: inherit;
   text-align: center;
