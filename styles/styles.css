@@ -252,6 +252,27 @@ body {
   position: relative;
 }
 
+.navigation-user-button{
+  position: relative;
+}
+
+.quantity-units{
+  background-image: url(/images/circle-white.svg);
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 0;
+  left: -15px;
+}
+
+.quantity-units span{
+  position: relative;
+  top: -5px;
+  left: 6px;
+  font-size: 14px;
+}
+
 .navigation-user-button:hover {
   opacity: 50%;
 }
