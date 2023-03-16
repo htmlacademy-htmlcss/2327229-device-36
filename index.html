@@ -115,7 +115,7 @@
                         <span>2000 ₽</span>
                       </p>
                     </div>
-                    <button class="button-popover">
+                    <button class="button-popover" type="button">
                       <span>Открыть корзину</span>
                     </button>
                   </div>
@@ -366,17 +366,17 @@
           <div class="services-items">
             <ul class="services-list list-reset">
               <li class="services-item">
-                <button class="button button-active">
+                <button class="button button-active" type="button">
                   <span>Доставка</span>
                 </button>
               </li>
               <li class="services-item">
-                <button class="button button-service button-decore">
+                <button class="button button-service button-decore" type="button">
                   <span>Гарантия</span>
                 </button>
               </li>
               <li class="services-item">
-                <button class="button button-service button-decore">
+                <button class="button button-service button-decore" type="button">
                   <span>Кредит</span>
                 </button>
               </li>
@@ -425,7 +425,7 @@
       <section class="delivery-on-order">
         <div class="container margin-bottom-container">
           <h2 class="visually-hidden">Доставка под заказ</h2>
-          <button class="button button-delivery-on-order">
+          <button class="button button-delivery-on-order" type="button">
             <span class="courier-icon">
               <svg class="courier-icon-svg" aria-hidden="true" focusable="false" width="47" height="31"
                 viewBox="0 0 47 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -661,7 +661,7 @@
     <div class="modal-visually">
       <div class="modal-container">
         <div class="modal modal-window">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <section class="modal-content">
@@ -670,19 +670,19 @@
               <div class="modal-container-field-name">
                 <p class="field-group">
                   <label class="modal-label" for="name-modal">Ваше имя:</label>
-                  <input class="modal-input-name field-modal" type="text" id="name-modal" name="name-modal"
+                  <input class="modal-input-name field-modal" type="text" id="name-modal" name="name-modal" required
                     placeholder="Введите имя">
                 </p>
                 <p class="field-group">
                   <label class="modal-label">Ваш e-mail:</label>
-                  <input class="modal-input-email field-modal" type="email" id="modal-e-mail" name="e-mail"
+                  <input class="modal-input-email field-modal" type="email" id="modal-e-mail" name="e-mail" required
                     placeholder="Введите e-mail">
                 </p>
               </div>
               <div class="modal-container-order">
                 <div class="field-group">
                   <label class="modal-label" for="modal-input-order">Что нужно привезти:</label>
-                  <input class="modal-input-order field-modal-order" type="text" id="modal-input-order"
+                  <input class="modal-input-order field-modal-order" type="text" id="modal-input-order" required
                     name="modal-input-order" placeholder="В свободной форме">
                 </div>
                 <div class="field-group field-quantity-container">
@@ -700,13 +700,13 @@
                     </div>
                   </div>
                   <div class="field-quantity">
-                    <button class="button-modal-less button-field-quantity"></button>
+                    <button class="button-modal-less button-field-quantity" type="button"></button>
                     <input class="modal-number-input" type="number" id="number-modal" value="1" name="number-modal">
-                    <button class="button-modal-more button-field-quantity"></button>
+                    <button class="button-modal-more button-field-quantity" type="button"></button>
                   </div>
                 </div>
               </div>
-              <button class="button button-decore">
+              <button class="button button-decore" type="button">
                 <span>Отправить</span>
               </button>
             </form>
