@@ -109,6 +109,10 @@ body {
   outline: 2px solid #AF4FFF;
 }
 
+.link-logo:focus{
+  outline: none;
+}
+
 .user-tools {
   margin-bottom: 30px;
 }
@@ -130,13 +134,6 @@ body {
   width: 533px;
   display: flex;
   margin-right: 15px;
-}
-
-.site-search-wrapper {
-  display: block;
-  width: 361px;
-  height: 41px;
-  position: relative;
 }
 
 .search-input {
@@ -485,7 +482,7 @@ body {
   z-index: 5;
 }
 
-.drop-menu-container{
+.drop-menu{
   display: none;
 }
 
@@ -535,7 +532,7 @@ body {
   opacity: 100%;
 }
 
-.button-drop-menu:active + .drop-menu-container {
+.button-drop-menu:active + .drop-menu {
   display: block;
 
 }
@@ -1677,6 +1674,10 @@ body {
   margin: 0;
 }
 
+.range-input:focus{
+  outline: 2px solid #AF4FFF;
+}
+
 .catalog-filter-title {
   padding-top: 12px;
   margin-bottom: 20px;
@@ -1763,17 +1764,12 @@ body {
   opacity: 20%;
 }
 
-/*.catalog-filter-item:focus{
-  width: 20px;
-  height: 20px;
-  outline: 2px solid #AF4FFF;
-}*/
 
 .control-input[type="checkbox"]:checked + .control-mark {
   content: url("../images/check.svg");
 }
 
-.control-input:focus + .control-mark::after{
+.control-input:focus + .control-mark::before{
   content: "";
   position: absolute;
   top: -4px;
@@ -1807,13 +1803,13 @@ body {
   margin: 4px;
 }
 
-.control-mark-radio:focus + .control-mark-radio::after{
+.control-input-radio:focus + .control-mark-radio::before{
   content: "";
   position: absolute;
-  top: -4px;
-  left: -4px;
-  width: 23px;
-  height: 23px;
+  top: -2px;
+  left: -2px;
+  width: 20px;
+  height: 20px;
   outline: 2px solid #AF4FFF;
 }
 

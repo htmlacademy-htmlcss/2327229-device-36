@@ -25,15 +25,11 @@
               <div class="container-search">
                 <form action="https://echo.htmlacademy.ru/" class="search-form" method="post">
                   <label for="site-search" class="visually-hidden">Поиск по сайту</label>
-                  <div class="site-search-wrapper">
-                    <input id="site-search" class="search-input" type="text" name="site-search"
-                      placeholder="Поиск по сайту">
-                  </div>
-                  <div class="search-button-wrapper">
-                    <button class="search-button" type="submit">
-                        <span>Найти</span>
-                    </button>
-                  </div>
+                  <input id="site-search" class="search-input" type="text" name="site-search"
+                    placeholder="Поиск по сайту">
+                  <button class="search-button" type="submit">
+                    <span>Найти</span>
+                  </button>
                 </form>
                 <ul class="user-page-navigation list-reset">
                   <li class="user-page-navigation-item">
@@ -144,7 +140,8 @@
                   </defs>
                 </svg>
               </a>
-              <div class="drop-menu-container">
+              <section class="drop-menu">
+                <h3 class="visually-hidden">Выпадеющее меню</h3>
                 <div class="drop-menu-container-flex">
                   <ul class="drop-menu-list list-reset">
                     <li class="drop-menu-item">
@@ -171,7 +168,7 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </section>
             </div>
 
             <ul class="navigation-list list-reset">
@@ -384,19 +381,21 @@
                 </li>
               </ul>
             </div>
-            <div class="additional-terms-wrapper description-active">
+            <section class="additional-terms-wrapper description-active">
+              <h3 class="visually-hidden">Доставка</h3>
               <div class="description">
                 <div class="description-container">
                   <h3>Доставка</h3>
                   <p>Мы с удовольствием доставим ваш товар прямо<br>
                     к вашему подъезду совершенно бесплатно! Ведь<br>
                     мы неплохо заработаем, поднимая его на ваш этаж.
-                    </p>
+                  </p>
                 </div>
                 <img class="delivery-image" src="images/delivery.png" alt="Доставка." width="136" height="164">
               </div>
-            </div>
-            <div class="additional-terms-wrapper">
+            </section>
+            <section class="additional-terms-wrapper">
+              <h3 class="visually-hidden">Гарантия</h3>
               <div class="description">
                 <div class="description-container">
                   <h3>Гарантия</h3>
@@ -407,8 +406,9 @@
                 </div>
                 <img class="delivery-image" src="images/guarantee.png" alt="Гарантия." width="136" height="164">
               </div>
-            </div>
-            <div class="additional-terms-wrapper">
+            </section>
+            <section class="additional-terms-wrapper">
+              <h3 class="visually-hidden">Кредит</h3>
               <div class=" description">
                 <div class="description-container">
                   <h3>Кредит</h3>
@@ -419,7 +419,7 @@
                 </div>
                 <img class="delivery-image" src="images/credit.png" alt="Кредит." width="136" height="164">
               </div>
-            </div>
+            </section>
           </div>
         </div>
       </section>
