@@ -970,17 +970,17 @@ body {
   display: flex;
 }
 
-.description-container{
+.description-wrapper{
   margin-right: 106px;
 }
 
-.description-container h3{
+.description-wrapper h3{
   margin: 0;
   margin-bottom: 34px;
   padding-top: 72px;
 }
 
-.description-container p{
+.description-wrapper p{
   margin: 0;
 }
 
@@ -1755,10 +1755,15 @@ body {
   content: url("../images/check.svg");
 }
 
+.control-input[type="checkbox"]:focus:checked + .control-mark {
+  content: url("../images/check.svg");
+  outline: 2px solid #AF4FFF;
+}
+
 .control-input:focus + .control-mark::before{
   content: "";
   position: absolute;
-  top: -4px;
+  top: -3px;
   left: -4px;
   width: 23px;
   height: 23px;
