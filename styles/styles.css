@@ -123,12 +123,6 @@ body {
   align-items: center;
 }
 
-/*.container-search {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}*/
-
 .search-form {
   width: 533px;
   display: flex;
@@ -596,6 +590,7 @@ body {
 
 .slider-wrapper {
   position: relative;
+  margin-bottom: 23px;
 }
 
 .slider-item {
@@ -783,6 +778,8 @@ body {
   padding: 0;
   margin: 0;
   justify-content: center;
+  position: relative;
+  top: -38px;
 }
 
 .slider-pagination-button-active circle {
@@ -818,6 +815,10 @@ body {
 
 .slider-pagination-button:focus{
   outline: none;
+}
+
+.category-preview{
+  margin-bottom: 80px;
 }
 
 .category-list {
@@ -1037,7 +1038,7 @@ body {
 
 .delivery-on-order{
   margin-bottom: 76px;
-  margin-top: 200px;
+  margin-top: 180px;
 }
 
 .information-company {
@@ -1605,6 +1606,14 @@ body {
   cursor: pointer;
 }
 
+.range-toggle:hover, .range-toggle:active{
+  border: 2px solid #959595;
+}
+
+.range-toggle:focus{
+  outline: 2px solid #AF4FFF;
+}
+
 .toggle-min {
   top: -10px;
   left: -9px;
@@ -1755,19 +1764,15 @@ body {
   content: url("../images/check.svg");
 }
 
-.control-input[type="checkbox"]:focus:checked + .control-mark {
-  content: url("../images/check.svg");
-  outline: 2px solid #AF4FFF;
-}
-
-.control-input:focus + .control-mark::before{
+.control-input:focus + .control-mark{
+  box-sizing: border-box;
   content: "";
   position: absolute;
-  top: -3px;
-  left: -4px;
-  width: 23px;
-  height: 23px;
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .control-mark-radio {
