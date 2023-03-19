@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicons/favicon.png" sizes="32x32" type="image/png">
     <title>Каталог</title>
   </head>
 
@@ -14,38 +16,36 @@
 
           <a href="index.html" class="link-logo">
             <img class="image-logo" src="images/logo-header.svg" width="145" height="36"
-              alt="Логотип магазина «Девайс»">
+              alt="Логотип магазина «Девайс».">
           </a>
 
 
           <section class="user-tools">
             <h2 class="visually-hidden">Навигация для клиента</h2>
             <div class="header-container">
-              <div class="container-search">
-                <form action="https://echo.htmlacademy.ru/" class="search-form" method="post">
-                  <label></label>
-                  <input class="search-input" type="text" name="site-search" placeholder="Поиск по сайту">
-                  <button class="search-button" type="submit">
-                    <span>Найти</span>
-                  </button>
-                </form>
-                <ul class="user-page-navigation list-reset">
-                  <li class="user-page-navigation-item">
-                    <a class="button-login-user">
-                      <svg aria-hidden="true" focusable="false" class="icon-header" width="15" height="12"
-                        viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M1 12H14C13.8 9.4 11.9 7.2 9.3 6.5C10.3 5.9 11 4.8 11 3.5C11 1.6 9.4 0 7.5 0C5.6 0 4 1.6 4 3.5C4 4.8 4.7 5.9 5.7 6.5C3.1 7.2 1.2 9.4 1 12Z"
-                          fill="black" />
-                      </svg>
-                      Коля Петухов
-                    </a>
-                  </li>
-                  <li class="user-page-navigation-item">
-                    <a class="button-login button-exit" href="#">Выйти</a>
-                  </li>
-                </ul>
-              </div>
+              <form action="https://echo.htmlacademy.ru/" class="search-form" method="post">
+                <label or="site-search" class="visually-hidden">Поиск по сайту</label>
+                <input class="search-input" type="text" name="site-search" placeholder="Поиск по сайту">
+                <button class="search-button" type="submit">
+                  <span>Найти</span>
+                </button>
+              </form>
+              <ul class="user-page-navigation list-reset">
+                <li class="user-page-navigation-item">
+                  <a class="button-login-user">
+                    <svg aria-hidden="true" focusable="false" class="icon-header" width="15" height="12"
+                      viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 12H14C13.8 9.4 11.9 7.2 9.3 6.5C10.3 5.9 11 4.8 11 3.5C11 1.6 9.4 0 7.5 0C5.6 0 4 1.6 4 3.5C4 4.8 4.7 5.9 5.7 6.5C3.1 7.2 1.2 9.4 1 12Z"
+                        fill="black" />
+                    </svg>
+                    Коля Петухов
+                  </a>
+                </li>
+                <li class="user-page-navigation-item">
+                  <a class="button-login button-exit" href="#">Выйти</a>
+                </li>
+              </ul>
               <ul class="navigation-user list-reset">
                 <li class="navigation-user-item">
                   <a href="#" class="navigation-user-button">
@@ -93,7 +93,8 @@
                 </defs>
               </svg>
             </a>
-            <div class="drop-menu-container">
+            <section class="drop-menu">
+              <h3 class="visually-hidden">Выпадеющее меню</h3>
               <div class="drop-menu-container-flex">
                 <ul class="drop-menu-list list-reset">
                   <li class="drop-menu-item">
@@ -120,7 +121,7 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </section>
             <ul class="navigation-list list-reset">
               <li class="navigation-item">
                 <a href="#" class="navigation-link">Доставка</a>
@@ -148,10 +149,10 @@
               <a class="breadcrumbs-link" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Каталог товаров</a>
+              <a href="#" class="breadcrumbs-link">Каталог товаров</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Моноподы для селфи</a>
+              <a href="#" class="breadcrumbs-link">Моноподы для селфи</a>
             </li>
           </ul>
         </div>
@@ -168,24 +169,24 @@
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title-price">Стоимость</legend>
 
-                  <div class="range">
-                    <div class="range-scale">
-                      <div class="range-bar" style="left: 0; width: 119px">
-                        <label class="catalog-filter-label-one">
-                          <button class="range-toggle toggle-min">
-                            <span class="visually-hidden">Изменить минимальную цену.</span>
-                          </button>
-                        </label>
-                        <label class="catalog-filter-label-two">
-                          <button class="range-toggle toggle-max">
-                            <span class="visually-hidden">Изменить максимальную цену.</span>
-                          </button>
-                        </label>
-                      </div>
-                      <div class="from-to">
-                        <span class="from-to-min">от<input class="range-input range-input-min" type="number" value="0" name="range-input-price-min" id="range-input-price-min"></span>
-                        <span>до<input class="range-input range-input-max" type="number" value="5000" name="range-input-price-max" id="range-input-price-max"></span>
-                      </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 119px">
+                      <label class="catalog-filter-label-one">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                      </label>
+                      <label class="catalog-filter-label-two">
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </label>
+                    </div>
+                    <div class="from-to">
+                      <span class="from-to-min">от<input class="range-input range-input-min" type="number" value="0"
+                          name="range-input-price-min" id="range-input-price-min"></span>
+                      <span>до<input class="range-input range-input-max" type="number" value="5000"
+                          name="range-input-price-max" id="range-input-price-max"></span>
                     </div>
                   </div>
                 </fieldset>
@@ -288,7 +289,8 @@
               <ul class="product-list list-reset">
                 <li class="product-card">
                   <a class="product-card-link product-card-new" href="#">
-                    <img class="product-card-image" src="images/catalog-1.jpg" width="360" height="380" alt="Монопод 1">
+                    <img class="product-card-image" src="images/catalog-1.jpg" width="360" height="380"
+                      alt="Монопод 1.">
                     <div class="product-card-content-container">
                       <h3 class="product-card-title">Любительская селфи&nbsp;-&nbsp;палка</h3>
                       <b class="product-card-price">500 ₽</b>
@@ -298,7 +300,8 @@
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="#">
-                    <img class="product-card-image" src="images/catalog-2.jpg" width="360" height="380" alt="Монопод 2">
+                    <img class="product-card-image" src="images/catalog-2.jpg" width="360" height="380"
+                      alt="Монопод 2.">
                     <div class="product-card-content-container">
                       <h3 class="product-card-title">Профессиональная селфи&nbsp;-&nbsp;палка</h3>
                       <b class="product-card-price">1500 ₽</b>
@@ -308,7 +311,8 @@
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="#">
-                    <img class="product-card-image" src="images/catalog-3.jpg" width="360" height="380" alt="Монопод 3">
+                    <img class="product-card-image" src="images/catalog-3.jpg" width="360" height="380"
+                      alt="Монопод 3.">
                     <div class="product-card-content-container">
                       <h3 class="product-card-title">Непотопляемая селфи&nbsp;-&nbsp;палка</h3>
                       <b class="product-card-price">2500 ₽</b>
@@ -318,7 +322,8 @@
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="#">
-                    <img class="product-card-image" src="images/catalog-4.jpg" width="360" height="380" alt="Монопод 4">
+                    <img class="product-card-image" src="images/catalog-4.jpg" width="360" height="380"
+                      alt="Монопод 4.">
                     <div class="product-card-content-container">
                       <h3 class="product-card-title">Селфи&nbsp;-&nbsp;палка «Следуй за мной»</h3>
                       <b class="product-card-price">1500 ₽</b>
@@ -359,15 +364,16 @@
 
 
     <footer class="page-footer">
-      <div class="container flex-container">
+      <div class="container flex-container-footer">
         <div class="footer-address-section">
           <h2 class="visually-hidden">Адрес</h2>
           <a class="footer-address-logo" href="#">
-            <img src="images/logo-footer.svg" width="145" height="36" alt="Логотип интернет-магазина Девайс">
+            <img src="images/logo-footer.svg" width="145" height="36" alt="Логотип интернет-магазина Девайс.">
           </a>
           <address class="footer-address">
             <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </address>
+          <div class="orange-strip"></div>
         </div>
 
         <div class="footer-links">
